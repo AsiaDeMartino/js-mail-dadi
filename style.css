@@ -4,3 +4,8 @@
     box-sizing: border-box;
 }
 
+.gioco_dadi{
+    background-color: rgb(183,141,171);
+    height: 250px;
+}
+
