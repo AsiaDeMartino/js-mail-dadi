@@ -31,7 +31,14 @@ const database = [
     "example@gmail.com"
 ];
 
+const mailUtente = document.getElementById('mail');
+console.log(mailUtente);
+
+const cerca = document.getElementById("cerca");
+console.log(cerca);
+
 //creo un ciclo for per controllare se la mail inserita dall'utente è presente nell'array 
+
 
 
     
