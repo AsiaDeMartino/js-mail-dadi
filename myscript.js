@@ -31,6 +31,7 @@ const database = [
     "example@gmail.com"
 ];
 
+//creo un ciclo for per controllare se la mail inserita dall'utente è presente nell'array 
+
 
     
-    //creo un ciclo for per controllare se la mail inserita dall'utente è presente nell'array 
