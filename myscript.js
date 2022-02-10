@@ -11,11 +11,11 @@ console.log(numeroUtente);
 
     //confronto i due numeri --> alert che dice chi ha vinto 
 if (numeroComputer > numeroUtente) {
-    alert("Mi dispiace, hai perso!");
+    alert("Il computer ha fatto " + numeroComputer + " e tu hai fatto " + numeroUtente + "." + "\nMi dispiace, hai perso!");
   } else if (numeroComputer < numeroUtente){
-    alert("Complimenti, hai vinto!");
+    alert("Il computer ha fatto " + numeroComputer + " e tu hai fatto " + numeroUtente + "." + "\nComplimenti, hai vinto!");
  } else {
-    alert("Pareggio...");
+    alert("Il computer ha fatto " + numeroComputer + " e tu hai fatto " + numeroUtente + "." + "\nPareggio...");
  }
 })
 
@@ -37,8 +37,23 @@ console.log(mailUtente);
 const cerca = document.getElementById("cerca");
 console.log(cerca);
 
-//creo un ciclo for per controllare se la mail inserita dall'utente è presente nell'array 
+let controlloEmail = false;
 
+//creo un ciclo for per controllare se la mail inserita dall'utente è presente nell'array 
+cerca.addEventListener("click", function () {
+    for (let i = 0; i < database.length; i++) {
+        const element = database[i];
+        if (element == mailUtente.value) {
+            controlloEmail = true;
+        }
+    }
+    if (controlloEmail == true) {
+        alert ("Accesso consentito");
+        controlloEmail = false;
+    } else {
+        alert ("Accesso negato");
+    }
+})
 
 
     
